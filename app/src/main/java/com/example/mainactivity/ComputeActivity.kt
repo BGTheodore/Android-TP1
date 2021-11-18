@@ -34,8 +34,7 @@ class ComputeActivity : AppCompatActivity() {
 
             override fun onTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
                 if (field1.getText().toString().trim().length > 0
-                    && field2.getText().toString().trim().length > 0
-                ) {
+                    && field2.getText().toString().trim().length > 0) {
                     btncalculer.isEnabled = true
                 } else {
                     btncalculer.isEnabled = false
