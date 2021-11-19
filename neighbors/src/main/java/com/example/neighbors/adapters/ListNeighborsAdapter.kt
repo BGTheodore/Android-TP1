@@ -32,12 +32,16 @@ class ListNeighborsAdapter(
 
     class ViewHolder(view: View) :
         RecyclerView.ViewHolder(view) {
-        val mNeighborAvatar: ImageView = view.findViewById(R.id.item_list_avatar)
-        val mNeighborName: TextView = view.findViewById(R.id.item_list_name)
-        val mDeleteButton: ImageButton = view.findViewById(R.id.item_list_delete_button)
+        val mNeighborAvatar: ImageView
+        val mNeighborName: TextView
+        val mDeleteButton: ImageButton
+
 
         init {
             // Enable click on item
+            mNeighborAvatar = view.findViewById(R.id.item_list_avatar)
+            mNeighborName = view.findViewById(R.id.item_list_name)
+            mDeleteButton = view.findViewById(R.id.item_list_delete_button)
         }
     }
 

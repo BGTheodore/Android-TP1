@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         changeFragment(ListNeighborsFragment())
     }
 
+
     private fun changeFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.fragment_container, fragment)

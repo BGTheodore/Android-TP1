@@ -16,7 +16,7 @@ interface NeighborApiService {
     fun deleteNeighbor(neighbor: Neighbor)
 
     /**
-     * Create a neighbour
+     * Create a neighbor
      * @param neighbor: Neighbor
      */
     fun createNeighbor(neighbor: Neighbor)

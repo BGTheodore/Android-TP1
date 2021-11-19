@@ -12,8 +12,7 @@ import com.example.neighbors.R
 import com.example.neighbors.adapters.ListNeighborsAdapter
 import com.example.neighbors.data.NeighborRepository
 
-class ListNeighborsFragment : Fragment() {
-
+class ListNeighborsFragment : Fragment(){
     /**
      * Fonction permettant de définir une vue à attacher à un fragment
      */
@@ -40,6 +39,7 @@ class ListNeighborsFragment : Fragment() {
         val adapter = ListNeighborsAdapter(neighbors)
         recyclerView.adapter = adapter
     }
+
 
     private lateinit var recyclerView: RecyclerView
 
